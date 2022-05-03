@@ -1,0 +1,20 @@
+server:
+  port: 8080
+db:
+  name: aspire
+  database: hrixqubz
+  host: chunee.db.elephantsql.com
+  password: RVW_5emAME9StqvfYkUnAh7ciQlpMw30
+  port: 5432
+  username: hrixqubz
+  driver: postgres
+logger:
+  level: "error"
+  logfilepath: "log"
+  isstderrenabled: false
+  isconsoleenabled: true
+  isfileenabled: false
+  maxbackups: 100
+  maxsize: 50
+  maxage: 10
+jwtkey: aspire-secret-key

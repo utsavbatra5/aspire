@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"aspire/api"
+	"aspire/config"
+	"aspire/logger"
+	"aspire/persistency/database"
+)
+
+func init() {
+	// initialize config, database and logger
+	config.InitConfig()
+	database.InitConnections()
+	logger.InitLogger()
+}
 
 func main() {
-	fmt.Println("Hello")
+	api.InitAPI()
 }
